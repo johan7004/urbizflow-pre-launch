@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://urbizflow.com"), // <-- your live domain
   title: "UrbizFlow — Free Invoice Generator & Startup Tools",
   description:
     "All-in-one toolkit for freelancers & startups: free invoice generator, AI proposal maker, and business solutions. Join the pre-launch waitlist.",
@@ -30,11 +31,24 @@ export const metadata = {
     maxVideoPreview: -1,
   },
   alternates: { canonical: "https://urbizflow.com" },
+
+  // ---------- Favicons & PWA ----------
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [{ rel: "manifest", url: "/site.webmanifest" }],
+  },
+  themeColor: "#0b0d13",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      {/* app/icon.png is auto-served by Next.js, no extra tag needed */}
       <body className="min-h-screen scroll-smooth bg-[#0b0d13] text-white antialiased">
         {children}
       </body>
