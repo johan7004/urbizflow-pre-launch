@@ -489,7 +489,7 @@ export default function Home() {
                 "From onboarding to billing, streamline your client workflow end-to-end.",
               ],
               [
-                "Social Content Builder",
+                "AI Social Content Builder",
                 "Trendy templates that boost reach across Instagram, LinkedIn, and X.",
               ],
               [
@@ -498,7 +498,7 @@ export default function Home() {
               ],
               [
                 "Founder Perks",
-                "Join pre-launch for early access, lifetime discounts, and roadmap influence.",
+                "Join pre-launch for early access, Digital Collectibles, and roadmap influence.",
               ],
             ].map(([title, desc], i) => (
               <motion.div
