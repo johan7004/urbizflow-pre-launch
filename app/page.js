@@ -341,7 +341,7 @@ export default function Home() {
               for Freelancers & Startups
             </h1>
 
-            <p className="mt-5 text-white/70 max-w-xl">
+            <p className="my-5 text-white/70 max-w-xl">
               Create invoices, proposals, and social content in minutes. Built
               for freelancers, agencies, and startup teams. Join the waitlist
               for early access & founder pricing.
